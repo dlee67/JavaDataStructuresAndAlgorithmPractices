@@ -12,13 +12,24 @@ class BinTree_and_Recursion{
 
    Node root;
    
+   public void add(int number){
+   
+      if(root == null){
+      
+         root = new Node(number);
+         
+      }
+   
+      add(root, number);
+   
+   }
    
    public Node add(Node recurNode, int number){
    
       if(root == null){
       
          int goAwayNum = number;
-      
+               
          root = recurNode;
    
          return null;      
@@ -65,6 +76,7 @@ class BinTree_and_Recursion{
          }else{
          
             recurNode.right = add(recurNode.right, number);
+         
          /*
             if(recurNode == null){
             
@@ -74,6 +86,7 @@ class BinTree_and_Recursion{
             
             }
          */
+         
          }
          
          return recurNode;//<- That's going to return what I've passed?
@@ -86,11 +99,11 @@ class BinTree_and_Recursion{
    
       if(recurNode != null){
    
-         inOrderTraverse(recurNode);
+         inOrderTraverse(recurNode.left);
          
          recurNode.display();
          
-         inOrderTraverse(recurNode);
+         inOrderTraverse(recurNode.right);
       
       }
    
@@ -100,9 +113,13 @@ class BinTree_and_Recursion{
    
       BinTree_and_Recursion weed = new BinTree_and_Recursion();
       
-      Node newNode = new Node(0);
+      weed.add(5);
+   
+      weed.add(4);
       
-      weed.add();
+      weed.add(3);
+      
+      weed.inOrderTraverse(weed.root);
    
    }
 
@@ -119,9 +136,9 @@ class Node{
 
    int key;
    
-   Node rightChild;
+   Node right;
    
-   Node leftChild;
+   Node left;
    
    public Node(int key){
    
