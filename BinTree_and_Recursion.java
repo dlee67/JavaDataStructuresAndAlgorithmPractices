@@ -17,6 +17,8 @@ class BinTree_and_Recursion{
       if(root == null){
       
          root = new Node(number);
+      
+         return; //<- If I don't have that my output will be 3,4,5,5 for in order traverse.
          
       }
    
@@ -25,16 +27,6 @@ class BinTree_and_Recursion{
    }
    
    public Node add(Node recurNode, int number){
-   
-      if(root == null){
-      
-         int goAwayNum = number;
-               
-         root = recurNode;
-   
-         return null;      
-
-      }
    
       if(recurNode == null){
       
@@ -117,7 +109,17 @@ class BinTree_and_Recursion{
    
       weed.add(4);
       
+      weed.add(2);
+      
+      weed.add(10);     
+      
       weed.add(3);
+      
+      weed.add(7);
+      
+      weed.add(6);
+      
+      weed.add(8);
       
       weed.inOrderTraverse(weed.root);
    
