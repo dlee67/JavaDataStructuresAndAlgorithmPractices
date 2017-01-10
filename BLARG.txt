@@ -1,0 +1,19 @@
+
+
+public class BLARG {
+	
+	public BLARG() {
+		
+	}
+	
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		//beepboop
+		//
+		
+		//beepboop
+		int beepboop = 5;
+		
+	}
+	
+}
