@@ -69,15 +69,7 @@ class BinTree_and_Recursion{
          
             recurNode.right = add(recurNode.right, number);
          
-         /*
-            if(recurNode == null){
-            
-               recureNode = newNode;
-            
-               return null;
-            
-            }
-         */
+         
          
          }
          
@@ -86,14 +78,14 @@ class BinTree_and_Recursion{
    There is thing about rotation,
    
 */
-            
+         /*   
          int leftDepth = depth(recurNode.left);
          
          int rightDepth = depth(recurNode.right);
          
          int depthDiff = leftDepth - rightDepth;
          
-         if(depthDiff > 0){
+         if(depthDiff > 2){
          
             Node b = recurNode;
             
@@ -108,7 +100,7 @@ class BinTree_and_Recursion{
             return a;
             
             
-         }else if(depthDiff < 0){
+         }else if(depthDiff < 2){
          
             Node a = recurNode;
             
@@ -125,6 +117,11 @@ class BinTree_and_Recursion{
          
          }
          
+         Even if I have seen how the thing worked, and understands it abstractly,
+         
+         I still don't know how to apply.
+         
+         */
          return recurNode;//<- That's going to return what I've passed?
         
       }
