@@ -77,6 +77,43 @@ class LR_W_Recursion{
       recurNode.display();
    
    }
+   
+   /*
+   
+      At least while I was practicing removing a specific Node,
+      
+      there was a follow Node,
+      
+      the purpose of the followNode was for me to connect the
+      
+      Nodes, after certain Node was removed.
+   
+   */
+   public Node findSpecific(Node recurNode, int targetNumber){
+   
+      if(root == null){
+      
+         System.out.println("The list is empty.");
+      
+         return null; 
+      
+      }
+      
+      if(recurNode.number == targetNumber){
+   
+         System.out.println("Found the desired Node." + recurNode.number);
+   
+         return recurNode;
+         
+      }
+      
+      recurNode.next = findSpecific(recurNode.next, targetNumber);   
+   
+      return recurNode;//<- That's still hard to explain.
+//That's there so when the operation ends, nothing get's touched, persay; since, the operations
+//are done ONTO the pointers.
+   
+   }
 
    public static void main(String args[]){
    
@@ -92,7 +129,12 @@ class LR_W_Recursion{
       
       list.add(1);
       
-      list.iter(list.root);
+      //list.iter(list.root);
+   
+      Node test = list.findSpecific(list.root, 3); 
+   
+      System.out.println(test.number + " Do you know why that will give me 5?" + "It needs to because recusion happens between objects, they are \n"
+      + "returning materials to each other, not to the local var.");
    
    }
    
