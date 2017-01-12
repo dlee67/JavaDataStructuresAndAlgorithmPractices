@@ -1,8 +1,3 @@
-/*
-
-   Don't know if there is a way of doing it.
-
-*/
 class LR_W_Recursion{
 
    Node root;//Because traverse and many other things are done through a Node.
@@ -115,6 +110,26 @@ class LR_W_Recursion{
    
    }
 
+   public Node removeSpecific(Node recurNode, int targetNumber){
+   
+      if(root == null){
+      
+         return null;
+         
+      }
+   
+      if(recurNode.number == targetNumber){
+      
+         return recurNode.next;
+      
+      }
+   
+      recurNode.next = removeSpecific(recurNode.next, targetNumber);
+   
+      return recurNode;
+   
+   }
+
    public static void main(String args[]){
    
       LR_W_Recursion list = new LR_W_Recursion();
@@ -131,10 +146,17 @@ class LR_W_Recursion{
       
       //list.iter(list.root);
    
-      Node test = list.findSpecific(list.root, 3); 
+      //Node test = list.findSpecific(list.root, 3); 
    
-      System.out.println(test.number + " Do you know why that will give me 5?" + "It needs to because recusion happens between objects, they are \n"
-      + "returning materials to each other, not to the local var.");
+      //System.out.println(test.number + " Do you know why that will give me 5?" + "It needs to because recusion happens between objects, they are \n"
+      //+ "returning materials to each other, not to the local var.");
+   
+      list.removeSpecific(list.root, 2);
+      
+      
+      //Thank you God.
+      //Thank you everyone.
+      list.iter(list.root);   
    
    }
    
