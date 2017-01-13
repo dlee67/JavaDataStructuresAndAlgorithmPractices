@@ -4,8 +4,20 @@
    
    https://www.youtube.com/watch?v=SLauY6PpjW4
 
+   Working code.
+
+   Don't understand why it needs to return left index for a partition.
+
 */
 public class Quicksort_Demo{
+
+   /*
+   
+      That's genius,
+      
+      I need to get inspired by that!
+   
+   */
 
    public static void quicksort(int[] array){
    
@@ -99,7 +111,7 @@ public class Quicksort_Demo{
    
    }
    
-   public static void int partition(int[] array, int left, int right, int pivot){
+   public static int partition(int[] array, int left, int right, int pivot){
       
       while(left <= right){
       
@@ -141,7 +153,13 @@ public class Quicksort_Demo{
             Swap the elements in those two indices
          
          */
-            swap(array, left, right);
+         //  swap(array, left, right);
+         
+            int temp = array[left];
+            
+            array[left] = array[right];
+            
+            array[right] = temp;
          
             left++;
             
@@ -170,6 +188,20 @@ public class Quicksort_Demo{
       */
       return left;//That's the partition point.
    
+   }
+   
+   public static void main(String args[]){
+   
+      int[] list = {6, 3, 2, 1, 5, 9, 7, 8, 15};
+      
+      quicksort(list);
+      
+      for(int c = 0; c < list.length; c++){
+      
+         System.out.println(list[c]);
+      
+      }
+      
    } 
    
 }
