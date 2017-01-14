@@ -97,7 +97,8 @@ public class Quicksort_Demo{
       
       */ 
        
-      quicksort(array, left, index - 1);
+      quicksort(array, left, index - 1);//Index-1 because for the varied assortments.
+      //Such as the collapsements of the left and right pointers.
       
       /*
          
@@ -147,8 +148,7 @@ public class Quicksort_Demo{
                       
          }
       
-         if(left <= right){
-         /*
+         if(left <= right){       /*
          
             Swap the elements in those two indices
          
@@ -192,7 +192,7 @@ public class Quicksort_Demo{
    
    public static void main(String args[]){
    
-      int[] list = {6, 3, 2, 1, 5, 9, 7, 8, 15};
+      int[] list = {5, 3, 4, 1, 2};
       
       quicksort(list);
       
