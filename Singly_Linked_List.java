@@ -72,6 +72,47 @@ class Singly_Linked_List{
       }
    
    }
+   
+   /*
+   
+      In the end of things, I need to return something,
+      
+      after the traverse has been finished.
+   
+   */
+   public Node removeSpecific(Node recurNode, int targetNumber){
+   
+      if(recurNode.number == targetNumber){
+      /*
+      
+         The reason is because if I return the Node that I've passed in,
+         
+         the List will still be in attached state.
+         
+         However, if I return the Node next to the Node that I've passed in,
+         
+         then I have caused a memory leak delibrately.
+      
+      */
+         return recurNode.next;
+      
+      }
+      
+      /*
+      
+         The beauti of it is that I will be going back to the
+         
+         recurNode that I called removeSpecific operation.
+         
+         Meaning, I have caused the memory leak, I think.
+      
+      */
+      
+      recurNode.next = removeSpecific(recurNode.next, targetNumber);   
+      
+      return recurNode;
+      
+   }
   
    public static void main(String args[]){
    
@@ -88,6 +129,12 @@ class Singly_Linked_List{
       list.add(4);
       
       list.add(5);
+      
+      //list.iter(list.head);   
+   
+      list.removeSpecific(list.head, 2);
+      
+      list.removeSpecific(list.head, 5);
       
       list.iter(list.head);   
    
