@@ -28,7 +28,7 @@ class Shell_Sort{
          
             int key = list[outer];
       //Gonna have the inner >= interval - 1 be inner > interval-1 01/15/17      
-            for(int inner = outer; (inner >= interval - 1) && (list[inner] >= key);){
+            for(int inner = outer; (inner > interval - 1) && (list[inner] >= key);){
             
                list[inner] = list[inner - interval];
                
