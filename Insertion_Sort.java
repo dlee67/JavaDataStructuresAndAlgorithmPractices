@@ -1,37 +1,35 @@
 class Insertion_Sort{
    /*
       
-      The very first sorting algorithm that I've written.
-   
+      I have never written it in this way,
+      
+      I am kinda cool, YES!
+      
    */
    public static void main(String args[]){
    
       int[] list = {3, 2, 1, 4, 5, 6, 7, 0}; 
       
-      for(int pass = 0; pass < list.length-1; pass++){
+      int key = 0;
       
-         int temp = list[pass];
+      for(int k = 1; k < list.length; k++){
       
-         int toSwitch = pass;
-      
-         for(int index = pass + 1; index < list.length; index++){
+         key = list[k];
          
-            if(list[pass] > list[index]){
-            
-               toSwitch = index;
-            
-            }   
+         for(int j = k - 1; j >= 0 && list[j] >= key; j--){
          
+            list[j+1] = list[j];
+      
+            if(key <= list[j]){
+            
+               list[j] = key;
+            
+            }
+            
          }
-         
-         temp = list[pass];
-         
-         list[pass] = list[toSwitch] ;
-      
-         list[toSwitch] = temp;
       
       }
-   
+      
       for(int c = 0; c < list.length; c++){
       
          System.out.println(list[c]);
