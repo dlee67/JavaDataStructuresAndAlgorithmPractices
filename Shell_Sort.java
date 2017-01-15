@@ -1,3 +1,11 @@
+/*
+
+   Can't seem to work this thing,
+   
+   I should come back.
+
+*/
+
 class Shell_Sort{
 
    public static void main(String args[]){
@@ -15,8 +23,9 @@ class Shell_Sort{
          in order for me to apply shell sort effective as possible.
       
       */
-      for(int c = 0; c < list.length; c++)
-         interval = c/3;
+      
+      while(interval <= list.length/3)
+         interval = interval*2 + 1;
    
       while(interval != 0){
       //If I already know that iterval needs to be
