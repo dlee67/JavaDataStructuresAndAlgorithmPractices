@@ -1,4 +1,4 @@
-import java.util.Array;
+//import java.util.Array;
 
 class practice{
 
@@ -6,14 +6,14 @@ class practice{
    
       String[] list = {"0", "1", "2", "3", "4"};
       
-      int[] listNum;
+      int[] listNum = new int[list.length];
       
       for(int c = 0; c < list.length; c++)
       {
       
          String temp = list[c];
          
-         list[c] = Integer.parseInt(temp);
+         listNum[c] = Integer.parseInt(temp);
          
       }
       
