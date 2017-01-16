@@ -13,7 +13,7 @@ class practice{
       
          String temp = list[c];
          
-         listNum[c] = Integer.parseInt(temp);
+         int hashKey = Integer.parseInt(temp) % list.length;//Something like this. 
          
       }
       
@@ -23,6 +23,12 @@ class practice{
       
       }
    
+      System.out.println("================================================================================");
+      
+      System.out.println(11 % 29);
+   
+   //    value % list.length; <- something like that.
+   //listNum[c] = Integer.parseInt(temp) % list.length; //<- Because it's left to right, and computers are that smart.
    }
 
 }
