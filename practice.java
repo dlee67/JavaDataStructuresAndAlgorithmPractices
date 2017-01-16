@@ -2,6 +2,39 @@ import java.util.Arrays;
 
 class practice{
 
+   public int findKey(String key, int[] list){
+   
+      int hashKey = Integer.parseInt(key) % list.length;      
+      
+      int target = Integer.parseInt(key);
+      
+      while((list[hashKey] != 0))//It would makes sense in this case; however, if I have a design choice where hash values I
+      //generate will be frantic, then it won't work.
+      //Index out of bound hasn't happened.
+      {
+      
+         System.out.println("looping");
+      
+         if(list[hashKey] == target){
+         
+            System.out.println("Your value has been found.");
+         
+            return list[hashKey];
+         
+         }
+      
+         hashKey++;
+         
+         hashKey %= list.length; //Still don't understand why is that necessary.
+      
+      }
+      
+      System.out.println("Your value couldn't be found");
+      
+      return 0;
+      
+   }
+
    public static void main(String args[]){
    
       String[] list = {"55", "67", "32", "34", "12", "23", "35", "78", "99", "100", "23"};
@@ -57,6 +90,14 @@ class practice{
    
    //    value % list.length; <- something like that.
    //listNum[c] = Integer.parseInt(temp) % list.length; //<- Because it's left to right, and computers are that smart.
+   
+      practice goForce = new practice();
+   
+      int x = goForce.findKey("34", listNum);
+      
+      int y = goForce.findKey("111", listNum);//Well,
+      //don't really care so much about this.
+      
    }
 
 }
