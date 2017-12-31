@@ -1,0 +1,15 @@
+<h1>Hello <%= @name %></h1>
+<!--The form_tag takes the name in the controller method, sign_in.
+To ponder about this more, sign_in is considered as an URL, and according to the 
+html documentation, regarding form tag (because all helper method turns into html), action
+attribute sends the form data to the specified parameter (which is the url, in my case, sign_in method. -->
+<%= form_tag action: 'sign_in' do %>
+   <p>Enter your name:
+<!-- Constrast to the intuition of mine, @name is not the variable where the input value of the text_field will be sent;
+rather, @name is the value where the text_field will contain previous to submit; then,
+it would be safe to conclude that 'visitor_name' acts as an id (in fact, it's stated in the book). -->   
+   <%= text_field_tag 'visitor_name', @name %></p>
+
+   <%= submit_tag 'Sign in' %>
+
+<% end %>
