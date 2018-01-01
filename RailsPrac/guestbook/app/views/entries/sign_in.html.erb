@@ -13,3 +13,10 @@ it would be safe to conclude that 'visitor_name' acts as an id (in fact, it's st
    <%= submit_tag 'Sign in' %>
 
 <% end %>
+
+<p>Previous visitors:</p>
+<ul>
+<% @entries.each do |entry| %>
+  <li><%= entry.name %></li>
+<% end %>
+</ul>
