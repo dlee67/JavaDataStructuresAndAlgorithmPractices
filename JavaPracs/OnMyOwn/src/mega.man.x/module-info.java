@@ -1,0 +1,3 @@
+module mega.man.x{
+	
+}
