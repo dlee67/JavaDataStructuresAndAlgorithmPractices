@@ -1,1 +1,1 @@
-java --module-path out --module packt.addressbook/packt.addressbook.Main
+java --module-path out -m packt.addressbook/packt.addressbook.Main

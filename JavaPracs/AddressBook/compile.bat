@@ -1,1 +1,1 @@
-javac -nowarn -d src --module-source-path src --module packt.addressbook,packt.sortutil 
+javac -nowarn -d out --module-source-path src --module packt.addressbook,packt.sortutil 
