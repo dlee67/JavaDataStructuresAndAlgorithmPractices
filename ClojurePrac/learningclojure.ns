@@ -1,0 +1,12 @@
+(ns learnclojure)
+
+(def x "Hello World")
+
+(let [x "Steve"]
+	(print "Hello" x))
+	
+(if (empty? x)
+	"X is empty"
+	"X is not empty")
+
+#This must be comment because everything looks like a Lisp here.
