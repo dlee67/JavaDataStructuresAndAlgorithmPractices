@@ -1,4 +1,2 @@
-v=[1 2];
-w=[1 2];
-z=v-w;
-disp(z)
+theta = [1 1]
+cost_function()
