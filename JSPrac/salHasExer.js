@@ -6,10 +6,14 @@ function isPermu(compareThis, compareWith){
 	//both the lists.
 	for(var forCT=0;forCT < compareThis.length(); forCT++){
 		for(var forCW=0;forCW < compareWith.length(); forCW++){
+			if((compareThis.charAt(forCT) && compareWith.charAt(forCW)) == null){
+				return true;
+			}
 			if(compareThis.charAt(forCT) == compareWith.charAt(forCW)){
 				isPermu(compareThis.replace(compareThis.charAt(forCt)), 
 						compareWith.replace(compareWith.charAt(forCW)));
 			}
 		}
-	}
+	}	
 }
+
