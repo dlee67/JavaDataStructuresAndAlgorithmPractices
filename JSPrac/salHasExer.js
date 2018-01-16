@@ -1,5 +1,5 @@
-compareString="abcad"
-compareWithString="cbada"
+compareString="a"
+compareWithString="a"
 function isPermu(compareThis, compareWith){
 	console.log("Compare this now: " + compareThis + "\n");
 	console.log("Compare with now: " + compareWith + "\n");
