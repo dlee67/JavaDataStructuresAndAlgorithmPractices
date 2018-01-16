@@ -17,3 +17,4 @@ function isPermu(compareThis, compareWith){
 	}	
 }
 
+console.log(isPermu(compareString, compareWithString);
