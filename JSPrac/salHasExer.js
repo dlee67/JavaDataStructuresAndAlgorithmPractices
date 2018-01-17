@@ -1,5 +1,13 @@
-compareString="a"
-compareWithString="a"
+/*
+	isPermu function sees if the characters are permutable to each other.
+	
+	isPermu function recurrs each time when the characters removed
+	for two passed in string. When given strings are empty,
+	isPermu function notifies the user that the characters
+	are permutable to each other.
+*/
+compareString="abc"
+compareWithString="edc"
 function isPermu(compareThis, compareWith){
 	console.log("Compare this now: " + compareThis + "\n");
 	console.log("Compare with now: " + compareWith + "\n");
