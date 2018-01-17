@@ -1,7 +1,8 @@
 var student={
 	GPA: 3.0,
 	setGPA: function(value){
-		this.GPA = value;
+		this.GPA = value; //It seems like without the this keyword, the properties aren't
+						  //mutable.
 	} 
 };
 
