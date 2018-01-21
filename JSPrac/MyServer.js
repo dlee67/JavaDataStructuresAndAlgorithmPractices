@@ -6,9 +6,9 @@ var server = http.createServer((req, res) => {  // The req and res can be learne
 		res.writeHead(200, {'Content-Type': 'image/jpeg'});
 		fs.readFile('Trunks.jpg', (err, data) => {
 			if(err) throw err;
-			res.writeHead(200, {
-				'Content-Type':'image/jpeg'
-			});
+			//res.writeHead(200, {
+			//	'Content-Type':'image/jpeg'
+			//});
 			res.end(data); //Whatever I am trying to present, it seems like I have to present them through an end().
 						   //and the particular line I am using the end() is critical for my server.
 		});
