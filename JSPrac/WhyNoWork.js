@@ -12,6 +12,10 @@ var picOne = fs.readFile("Trunks.jpg", (err, data) => {
 	/*
 		01/21/18
 		And yup, it did work.
+		
+		https://nodejs.org/api/fs.html#fs_fs_readfile_path_options_callback
+		
+		It's even directly stated that the raw buffer is returned, "if not encoding is specified"
 	*/
 });
 
