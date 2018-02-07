@@ -1,0 +1,11 @@
+{
+  "name": "Express-Demo",
+  "version": "1.0.0",
+  "description": "Demonstrating Using Express stuff",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Learning Node.js, Second Edition",
+  "license": "ISC"
+}
