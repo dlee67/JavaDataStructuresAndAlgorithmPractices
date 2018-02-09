@@ -1,0 +1,8 @@
+fall2015 = {
+	"_id": "fall2015",
+	"classes": ["General Biology I FYS", "General Biology Lab I FYS",
+				"Computer Organization 1", "College Trigonometry"],
+	"GPA": 3.53,
+	"major": "Computer Science",
+	"minor": "Mathematics"
+}

@@ -1,0 +1,9 @@
+spring2015 = {
+	"_id": "spring2015",
+	"classes": ["Computer Science 1", "Frshmn Comp-Anly, Res & Documt", 
+				"China, Japan, Korea since 1800", "College Algebra Peer Study", 
+				"College Algebra", "Public Speaking"],
+	"GPA": 3.59,
+	"major": "Computer Science",
+	"minor": "Mathematics"
+}

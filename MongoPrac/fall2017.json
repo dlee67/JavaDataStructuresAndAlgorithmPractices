@@ -1,0 +1,9 @@
+fall2017 = {
+	"_id": "fall2017",
+	"classes": ["Principles of Prog. Languages", "Intro to Theory of Computation",
+	"MC Study Sexualities & Genders", "Computers, Ethics & Society",
+	"Introduction to Sociology"],
+	"GPA": 3.80,
+	"major": "Computer Science",
+	"minor": "Mathematics"
+}

@@ -1,0 +1,8 @@
+fall2014 = {
+	"_id": "fall2014",
+	"classes": ["Composing Arguments", "Elementary German 1", 
+				"Mathematical Modes of Thought", "Fundamentals of Music Theory", 
+				"Fundamentals Music Theory Lab"],
+	"GPA": 3.70,
+	"major": Music
+}

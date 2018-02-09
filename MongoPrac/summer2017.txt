@@ -1,0 +1,8 @@
+summer2017 = {
+	"_id": "summer2017",
+	"classes": ["Computer Organization 2", "Software Engr Fundamentals",
+	"Calculus 3", "Discrete Math for Comp Science"],
+	"GPA": 3.08,
+	"major": "Computer Science",
+	"minor": "Mathematics"
+}

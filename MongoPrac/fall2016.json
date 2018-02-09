@@ -1,0 +1,8 @@
+fall2016 = {
+	"_id": "fall2016",
+	"classes": ["Computer Organization 2", "Computational Matrix Algebra",
+	"Calculus 2", "Introduction to Philosophy"],
+	"GPA": 3.22,
+	"major": "Computer Science",
+	"minor": "Mathematics"
+}

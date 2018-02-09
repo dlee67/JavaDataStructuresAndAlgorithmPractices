@@ -1,0 +1,7 @@
+spring2016 = {
+	"_id": "spring2016",
+	"classes": ["Intro to Technical Writing", "Calculus 1"],
+	"GPA": 3.53,
+	"major": "Computer Science",
+	"minor": "Mathematics"
+}
