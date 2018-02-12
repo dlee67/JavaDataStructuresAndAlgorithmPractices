@@ -24,4 +24,7 @@ wanted in side the out directory.
   spike in the rate of getting things done.
 
 I believe that I got nothing done because I was too reliant on my intuition, and dogmatic thinking that learning
-things through book further solidifies understandings.  
+things through book further solidifies understandings.
+
+If I am going to learn things on my own, next time, I should see some kind of demonstration of things work (regarding
+the concept I am trying to learng), and then, try to understand the concepts.  
