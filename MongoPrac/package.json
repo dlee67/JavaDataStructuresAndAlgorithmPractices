@@ -5,6 +5,7 @@
   "private": true,
   "dependencies": {
     "async": "^2.6.0",
-    "mongodb": "^2.2.34"
+    "mongodb": "^2.2.34",
+    "mongoose": "^5.0.4"
   }
 }

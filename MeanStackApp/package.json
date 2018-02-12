@@ -1,0 +1,19 @@
+{
+	"name": "meanauthapp",
+	"version": "1.0.0",
+	"main": "app.js",
+	"scripts": {
+		"start": "node app"
+	},
+	"dependencies": {
+		"express": "*",
+		"mongoose": "*",
+		"bcryptjs": "*",
+		"cors": "*",
+		"jsonwebtoken": "*",
+		"body-parser": "*",
+		"passport": "*",
+		"passport-jwt": "*"
+	},
+	"author": "Brad Traversy"
+}
