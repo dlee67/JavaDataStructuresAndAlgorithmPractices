@@ -2,12 +2,9 @@ var express = require("express");
 var app = express();
 var mongoose = require("mongoose");
 var pug = require("pug");
-
 var http = require("http");
 
-
 //mongoose.connect("mongodb://localhost:8080/prac");
-
 //var schema = mongoose.Schema({
 //	value: {
 //		type: String
