@@ -15,3 +15,13 @@ packt.sortutil and packt.addressbook modules...
 As of now, I don't really know how to generate this error again,
 I am pretty sure the previous command I used threw in a file I didn't
 wanted in side the out directory.
+
+
+#02/11/2018
+
+- Just by switching my learning style, 4 days worth of work meant nothing because I got the result I wanted in a day.
+  I was trying to get things done by purely looking things up in the book, and I immediately notice that there is a 
+  spike in the rate of getting things done.
+
+I believe that I got nothing done because I was too reliant on my intuition, and dogmatic thinking that learning
+things through book further solidifies understandings.  
