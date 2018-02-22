@@ -1,0 +1,14 @@
+echo "Changing directory to WorkSpace"
+base="/home/bob/Desktop/WorkSpace"
+
+if [ "$1" = "PracticeBucket" ]; then
+	base+="/PracticeBucket";
+fi;
+if [ "$1" = "WebArchInd" ]; then
+	base+="/WebArchInd";
+fi;
+
+cd $base
+	
+
+
