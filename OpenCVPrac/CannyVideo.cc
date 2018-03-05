@@ -14,14 +14,14 @@ int main( int argc, char* argv[] ) {
 	}
 
 	Mat frame, img_rgb, img_gry, img_cny;
-	for(;;){
+	while(1){
 		cap >> frame; // Assuming frame is a Mat.
 		cvtColor(frame, img_gry, COLOR_BGR2GRAY); // Converts the captured frame into a grey image.
 		Canny(img_gry, img_cny, 35, 50, 3, true); // Applies Canny edge detection to the greyed out image.
 		//imshow("Video Footage", frame);
 		//imshow("Gray Footage", img_gry);
 		imshow("Canny Footage", img_cny); // Display the Cannied image.
-		if(waitKey(0) >= 0){
+		if(waitKey(33)  >= 0){ // What's the differenced between the waitKey(0) and waitKey(33)?
 			break;
 		}	
 	}
