@@ -21,8 +21,9 @@ class Node {
 class LinkedList {
 	Node* headNode;
 	public:
-		LinkedList(){
+		LinkedList(int val){
 			headNode = new Node;
+			headNode->setVal(val);
 		}
 		void newNode(int val){
 			Node* temp = new Node;
@@ -40,14 +41,18 @@ class LinkedList {
 				if(temp->next == NULL){
 					break;	
 				}
-				temp = temp->next
+				temp = temp->next;
 			}
 		}
 };
 
 int main(int argc, char** argv){
-	LinkedList list();
-//	list.iterNode();	
+	LinkedList list(0);
+	list.newNode(1);
+	list.newNode(2);
+	list.newNode(3);
+	list.newNode(4);
+	list.iterNode();	
 
 	return 0;
 }

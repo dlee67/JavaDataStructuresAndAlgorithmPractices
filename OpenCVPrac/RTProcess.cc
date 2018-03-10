@@ -1,7 +1,8 @@
 #include "opencv2/ximgproc/segmentation.hpp"
-#include "opencv2/highgui.hpp"
-#include "opencv2/core.hpp"
-#include "opencv2/imgproc.hpp"
+//#include "opencv2/highgui.hpp"
+//#include "opencv2/core.hpp"
+//#include "opencv2/imgproc.hpp"
+#include <opencv2/opencv.hpp>
 #include <iostream>
 #include <ctime>
 #include <vector>
@@ -11,9 +12,6 @@ using namespace cv;
 using namespace cv::ximgproc::segmentation;
 
 int main( int argc, char** argv ) {	
-	  	
-	setUseOptimized(true);
-	setNumThreads(4);
 
 	Mat frame, img_gry, img_cny;	
 	frame = imread("TrendBird.png");
