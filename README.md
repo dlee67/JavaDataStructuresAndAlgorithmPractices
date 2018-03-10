@@ -1,6 +1,11 @@
 # PracticeBucket
 Much prac, such determination, wow
 
+I take no credits for any of the code being provided in this repository, for
+handful of the programs here are not written by me. If one happens to stumble
+upon the code of theirs in this repository, I'd be happy to credit the owner,
+edit it, or get rid of it from this repository.
+
 #01/08/2018
 
 While reading Modular Programming in Java 9...
