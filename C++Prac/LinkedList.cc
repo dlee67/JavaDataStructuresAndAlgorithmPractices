@@ -23,26 +23,37 @@ class LinkedList {
 	public:
 		LinkedList(int val){
 			headNode = new Node;
-			headNode->setVal(val);
+			// Interchangeably, headNode->setVal could be used, which is the shorter version of whatever below.
+			// Officially, -> is for accessing something beyond the pointer.
+			(*headNode).setVal(val);
 		}
 		void newNode(int val){
 			Node* temp = new Node;
-			temp->setVal(val);
-			temp->next = headNode;
+			(*temp).setVal(val);
+			(*temp).next = headNode;
 			headNode = temp;
 		}
 		//Should do this recursivly at one point.
-		void iterNode(){
+		void iterNode(Node &recur){
 
-			Node *temp = headNode;			
-
-			while(1){
+			Node *temp = recur;
+			if(temp->next != NULL){
 				cout << temp->val << endl;
-				if(temp->next == NULL){
-					break;	
-				}
-				temp = temp->next;
+				iterNode(temp->next);
+			}else{
+				cout << temp->val << endl;
+				return NULL;
 			}
+
+		//	Node *temp = headNode;			
+
+		//	while(1){
+		//		cout << temp->val << endl;
+		//		if((*temp).next == NULL){
+		//			break;	
+		//		}
+		//		temp = (*temp).next;
+		//	}
 		}
 };
 
@@ -52,7 +63,7 @@ int main(int argc, char** argv){
 	list.newNode(2);
 	list.newNode(3);
 	list.newNode(4);
-	list.iterNode();	
+	list.iterNode(list.(*headNode));	
 
 	return 0;
 }
