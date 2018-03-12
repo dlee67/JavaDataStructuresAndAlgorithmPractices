@@ -1,0 +1,1 @@
+cmd_/home/bob/Desktop/WorkSpace/PracticeBucket/KernelPrac/hello-1.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/bob/Desktop/WorkSpace/PracticeBucket/KernelPrac/hello-1.ko /home/bob/Desktop/WorkSpace/PracticeBucket/KernelPrac/hello-1.o /home/bob/Desktop/WorkSpace/PracticeBucket/KernelPrac/hello-1.mod.o ;  true
