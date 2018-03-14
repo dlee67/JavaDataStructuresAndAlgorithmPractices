@@ -34,7 +34,7 @@ class LinkedList {
 			headNode = temp;
 		}
 		//Should do this recursivly at one point.
-		void iterNode(Node &recur){
+		void iterNode(Node& recur){
 
 			Node *temp = recur;
 			if(temp->next != NULL){
