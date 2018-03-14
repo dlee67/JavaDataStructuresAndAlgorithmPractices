@@ -6,6 +6,8 @@
 
 static int hello_init(void)
 {
+	//More about the MACROS being used can be found below:
+	//https://elinux.org/Debugging_by_printing
 	printk(KERN_INFO "Hello world 1.\n");
 
 	/* 
