@@ -1,0 +1,1 @@
+cmd_/home/bob/Desktop/WorkSpace/PracticeBucket/Lulz/urMod.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/bob/Desktop/WorkSpace/PracticeBucket/Lulz/urMod.ko /home/bob/Desktop/WorkSpace/PracticeBucket/Lulz/urMod.o /home/bob/Desktop/WorkSpace/PracticeBucket/Lulz/urMod.mod.o ;  true

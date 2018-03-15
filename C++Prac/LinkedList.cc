@@ -19,8 +19,8 @@ class Node {
 };
 
 class LinkedList {
-	Node* headNode;
-	public:
+	public:	
+		Node* headNode;
 		LinkedList(int val){
 			headNode = new Node;
 			// Interchangeably, headNode->setVal could be used, which is the shorter version of whatever below.
@@ -34,7 +34,7 @@ class LinkedList {
 			headNode = temp;
 		}
 		//Should do this recursivly at one point.
-		void iterNode(Node& recur){
+		void iterNode(Node* recur){
 
 			Node *temp = recur;
 			if(temp->next != NULL){
@@ -42,7 +42,7 @@ class LinkedList {
 				iterNode(temp->next);
 			}else{
 				cout << temp->val << endl;
-				return NULL;
+				return;
 			}
 
 		//	Node *temp = headNode;			
@@ -63,7 +63,7 @@ int main(int argc, char** argv){
 	list.newNode(2);
 	list.newNode(3);
 	list.newNode(4);
-	list.iterNode(list.(*headNode));	
+	list.iterNode(list.headNode);	
 
 	return 0;
 }
