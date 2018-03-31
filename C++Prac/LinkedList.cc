@@ -44,17 +44,21 @@ class LinkedList {
 				cout << temp->val << endl;
 				return;
 			}
-
-		//	Node *temp = headNode;			
-
-		//	while(1){
-		//		cout << temp->val << endl;
-		//		if((*temp).next == NULL){
-		//			break;	
-		//		}
-		//		temp = (*temp).next;
-		//	}
 		}
+
+		void find(Node *recur, int userSpecifiedValue){
+			Node* temp = recur;
+			if(temp->next != NULL){
+				if(temp->val == userSpecifiedValue){
+					cout << "Got it." << endl;
+					return;
+				}
+				find(temp->next, userSpecifiedValue);
+			}else{
+				cout << "User spcified value wasn't able to be found." << endl;
+				return;
+			}
+		}		
 };
 
 int main(int argc, char** argv){
@@ -64,6 +68,9 @@ int main(int argc, char** argv){
 	list.newNode(3);
 	list.newNode(4);
 	list.iterNode(list.headNode);	
+	cout << "-------------------------------------" << endl;
+	list.find(list.headNode, 4);
+	list.find(list.headNode, 5);
 
 	return 0;
 }
