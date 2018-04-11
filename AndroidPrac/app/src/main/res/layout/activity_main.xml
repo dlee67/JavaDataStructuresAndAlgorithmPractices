@@ -21,7 +21,7 @@
         android:id="@+id/IntentButton"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:onClick=""
+        android:onClick="toSecond"
         android:text="Push to intent">
     </Button>
 

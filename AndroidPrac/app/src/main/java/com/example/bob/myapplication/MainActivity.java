@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void toSecond(View view){
-        Intent toSecond = new Intent(this, SecondActivity.class);
-        startActivity(toSecond);
+        Intent secondIntent = new Intent(this, SecondActivity.class);
+        startActivity(secondIntent);
     }
 }
