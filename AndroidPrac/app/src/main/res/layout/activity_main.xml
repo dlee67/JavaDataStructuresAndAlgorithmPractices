@@ -18,8 +18,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:id="@+id/IntentButton"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
+        android:onClick=""
         android:text="Push to intent">
     </Button>
 
