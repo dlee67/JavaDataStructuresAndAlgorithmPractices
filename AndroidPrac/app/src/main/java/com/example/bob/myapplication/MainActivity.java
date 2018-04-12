@@ -6,13 +6,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     /*
         The below methods briefly displays the life cycle of the Android
         Activity life cycle.
-     */
+    */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void toSecond(View view){
         Intent secondIntent = new Intent(this, SecondActivity.class);
+        TextView mainText = (TextView)findViewById(R.id.SomeText);
+        secondIntent.putExtra("FROM_MAIN", mainText.getText());
         startActivity(secondIntent);
     }
 }
