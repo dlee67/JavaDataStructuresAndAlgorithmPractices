@@ -22,6 +22,7 @@ public class SecondActivity extends AppCompatActivity {
         //TextView mainTextView = (TextView)findViewById(R.id.SomeText);
 
         //And below two lines certainly do the job.
+        // https://stackoverflow.com/questions/2091465/how-do-i-pass-data-between-activities-in-android-application/7325248#7325248
         TextView secondTextView = (TextView)findViewById(R.id.SecondTextSecond);
         secondTextView.setText(getIntent().getStringExtra("FROM_MAIN"));
     }

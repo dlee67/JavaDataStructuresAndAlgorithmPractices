@@ -59,6 +59,18 @@ class LinkedList {
 				return;
 			}
 		}		
+
+		/*
+			I wonder if there is a need to "deallocate" the innitial Node object that was pointed
+			by the headNode pointer.
+		*/
+		void pop(){
+			cout << "Head node now: ";
+			cout << headNode->val << endl;
+			Node* temp = headNode->next;
+			headNode = NULL;
+			headNode = temp;
+		}
 };
 
 int main(int argc, char** argv){
@@ -71,6 +83,9 @@ int main(int argc, char** argv){
 	cout << "-------------------------------------" << endl;
 	list.find(list.headNode, 4);
 	list.find(list.headNode, 5);
-
+	cout << "-------------------------------------" << endl;	
+	list.pop();
+	list.pop();
+	list.iterNode(list.headNode);
 	return 0;
 }
