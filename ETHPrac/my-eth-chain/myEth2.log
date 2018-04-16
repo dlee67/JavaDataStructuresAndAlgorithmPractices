@@ -1,0 +1,24 @@
+INFO [04-15|18:41:40] Maximum peer count                       ETH=25 LES=0 total=25
+INFO [04-15|18:41:40] Starting peer-to-peer node               instance=Geth/v1.8.2-stable-b8b9f7f4/linux-amd64/go1.9.4
+INFO [04-15|18:41:40] Allocated cache and file handles         database=/home/bob/Desktop/WorkSpace/PracticeBucket/ETHPrac/my-eth-chain/peer2DataDir/geth/chaindata cache=768 handles=512
+WARN [04-15|18:41:40] Upgrading database to use lookup entries 
+INFO [04-15|18:41:40] Initialised chain configuration          config="{ChainID: 1994 Homestead: 0 DAO: <nil> DAOSupport: false EIP150: <nil> EIP155: 0 EIP158: 0 Byzantium: 0 Constantinople: <nil> Engine: unknown}"
+INFO [04-15|18:41:40] Disk storage enabled for ethash caches   dir=/home/bob/Desktop/WorkSpace/PracticeBucket/ETHPrac/my-eth-chain/peer2DataDir/geth/ethash count=3
+INFO [04-15|18:41:40] Disk storage enabled for ethash DAGs     dir=/home/bob/.ethash                                                                        count=2
+INFO [04-15|18:41:40] Initialising Ethereum protocol           versions="[63 62]" network=1114
+INFO [04-15|18:41:40] Database deduplication successful        deduped=0
+INFO [04-15|18:41:40] Loaded most recent local header          number=0 hash=9d236a…641806 td=400
+INFO [04-15|18:41:40] Loaded most recent local full block      number=0 hash=9d236a…641806 td=400
+INFO [04-15|18:41:40] Loaded most recent local fast block      number=0 hash=9d236a…641806 td=400
+INFO [04-15|18:41:40] Regenerated local transaction journal    transactions=0 accounts=0
+INFO [04-15|18:41:40] Starting P2P networking 
+INFO [04-15|18:41:42] UDP listener up                          self=enode://902929ff90ad4cd1d194060bd5c950eebe6582e548dee49a61df9b0be352dab7c67d74ed8bd286eff4bd683403684c96b4032e73960881a8b22fea6716755603@[::]:30304
+INFO [04-15|18:41:42] RLPx listener up                         self=enode://902929ff90ad4cd1d194060bd5c950eebe6582e548dee49a61df9b0be352dab7c67d74ed8bd286eff4bd683403684c96b4032e73960881a8b22fea6716755603@[::]:30304
+INFO [04-15|18:41:42] IPC endpoint opened                      url=/home/bob/Desktop/WorkSpace/PracticeBucket/ETHPrac/my-eth-chain/peer2DataDir/geth.ipc
+INFO [04-15|19:41:40] Regenerated local transaction journal    transactions=0 accounts=0
+INFO [04-15|19:58:25] IPC endpoint closed                      endpoint=/home/bob/Desktop/WorkSpace/PracticeBucket/ETHPrac/my-eth-chain/peer2DataDir/geth.ipc
+INFO [04-15|19:58:25] Blockchain manager stopped 
+INFO [04-15|19:58:25] Stopping Ethereum protocol 
+INFO [04-15|19:58:25] Ethereum protocol stopped 
+INFO [04-15|19:58:25] Transaction pool stopped 
+INFO [04-15|19:58:25] Database closed                          database=/home/bob/Desktop/WorkSpace/PracticeBucket/ETHPrac/my-eth-chain/peer2DataDir/geth/chaindata

@@ -1,0 +1,24 @@
+=============== Apr 15, 2018 (MDT) ===============
+18:41:42.644349 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+18:41:42.707760 db@open opening
+18:41:42.710819 version@stat F·[] S·0B[] Sc·[]
+18:41:42.757813 db@janitor F·2 G·0
+18:41:42.757866 db@open done T·50.063969ms
+19:07:45.887576 memdb@flush N·39605 S·3MiB
+19:07:46.015085 memdb@flush created L0@3 N·39605 S·1MiB "n:\x00..ail,v24094":"version,v1"
+19:07:46.015164 version@stat F·[1] S·1MiB[1MiB] Sc·[0.25]
+19:07:46.057775 memdb@flush committed F·1 T·170.143355ms
+19:07:46.059949 journal@remove removed @1
+19:46:58.175887 memdb@flush N·35905 S·3MiB
+19:46:58.269071 memdb@flush created L0@5 N·35905 S·631KiB "n:\x00..ing,v60266":"n:\xff..ing,v41885"
+19:46:58.269161 version@stat F·[2] S·1MiB[1MiB] Sc·[0.50]
+19:46:58.310302 memdb@flush committed F·1 T·134.367417ms
+19:46:58.311256 journal@remove removed @2
+19:46:58.901610 table@compaction L0·2 -> L1·0 S·1MiB Q·75530
+19:46:59.143878 table@build created L1@6 N·20045 S·1024KiB "n:\x00..ail,v24094":"version,v1"
+19:46:59.143973 version@stat F·[0 1] S·1024KiB[0B 1024KiB] Sc·[0.00 0.01]
+19:46:59.219514 table@compaction committed F-1 S-738KiB Ke·0 D·55465 T·317.848913ms
+19:46:59.219746 table@remove removed @5
+19:46:59.220144 table@remove removed @3
+19:58:25.034687 db@close closing
+19:58:25.034883 db@close done T·194.862µs

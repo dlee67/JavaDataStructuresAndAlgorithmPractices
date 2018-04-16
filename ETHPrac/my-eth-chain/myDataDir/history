@@ -1,0 +1,6 @@
+eth.coinbase
+eth.getBalance(eth.coinbase)
+miner.start()
+miner.stop()
+exit()
+admin.nodeInfo.enode

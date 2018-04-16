@@ -1,0 +1,109 @@
+INFO [04-15|18:35:24] Maximum peer count                       ETH=25 LES=0 total=25
+Fatal: Error starting protocol stack: open /home/bob/Desktop/WorkSpace/PracticeBucket/ETHPrac/my-eth-chain/myDataDir/geth/LOCK: permission denied
+INFO [04-15|18:35:29] Maximum peer count                       ETH=25 LES=0 total=25
+INFO [04-15|18:35:29] Starting peer-to-peer node               instance=Geth/v1.8.2-stable-b8b9f7f4/linux-amd64/go1.9.4
+INFO [04-15|18:35:29] Allocated cache and file handles         database=/home/bob/Desktop/WorkSpace/PracticeBucket/ETHPrac/my-eth-chain/myDataDir/geth/chaindata cache=768 handles=512
+WARN [04-15|18:35:29] Upgrading database to use lookup entries 
+INFO [04-15|18:35:29] Initialised chain configuration          config="{ChainID: 1994 Homestead: 0 DAO: <nil> DAOSupport: false EIP150: <nil> EIP155: 0 EIP158: 0 Byzantium: 0 Constantinople: <nil> Engine: unknown}"
+INFO [04-15|18:35:29] Disk storage enabled for ethash caches   dir=/home/bob/Desktop/WorkSpace/PracticeBucket/ETHPrac/my-eth-chain/myDataDir/geth/ethash count=3
+INFO [04-15|18:35:29] Disk storage enabled for ethash DAGs     dir=/home/bob/.ethash                                                                     count=2
+INFO [04-15|18:35:29] Initialising Ethereum protocol           versions="[63 62]" network=1114
+INFO [04-15|18:35:29] Database deduplication successful        deduped=0
+INFO [04-15|18:35:29] Loaded most recent local header          number=0 hash=9d236a…641806 td=400
+INFO [04-15|18:35:29] Loaded most recent local full block      number=0 hash=9d236a…641806 td=400
+INFO [04-15|18:35:29] Loaded most recent local fast block      number=0 hash=9d236a…641806 td=400
+INFO [04-15|18:35:29] Regenerated local transaction journal    transactions=0 accounts=0
+INFO [04-15|18:35:29] Starting P2P networking 
+INFO [04-15|18:35:31] UDP listener up                          self=enode://61ea7177010758a3048dd06b3bb53d83d43e296fd10c3a76ae88175c5286bde382107cc00fd285224fbccb09e6e7bbc504ed54b5f8b0824ecf1c07bf0d51939e@[::]:30303
+INFO [04-15|18:35:31] RLPx listener up                         self=enode://61ea7177010758a3048dd06b3bb53d83d43e296fd10c3a76ae88175c5286bde382107cc00fd285224fbccb09e6e7bbc504ed54b5f8b0824ecf1c07bf0d51939e@[::]:30303
+INFO [04-15|18:35:31] IPC endpoint opened                      url=/home/bob/Desktop/WorkSpace/PracticeBucket/ETHPrac/my-eth-chain/myDataDir/geth.ipc
+INFO [04-15|18:38:39] Etherbase automatically configured       address=0x4336bE3a5F412778b80C4664A99B90B23c52A64E
+INFO [04-15|18:39:12] Updated mining threads                   threads=0
+INFO [04-15|18:39:12] Transaction pool price threshold updated price=18000000000
+INFO [04-15|18:39:12] Starting mining operation 
+INFO [04-15|18:39:12] Commit new mining work                   number=1 txs=0 uncles=0 elapsed=370.473µs
+INFO [04-15|18:39:14] Generating DAG in progress               epoch=0 percentage=0 elapsed=1.613s
+INFO [04-15|18:39:16] Generating DAG in progress               epoch=0 percentage=1 elapsed=3.209s
+INFO [04-15|18:39:18] Generating DAG in progress               epoch=0 percentage=2 elapsed=4.841s
+INFO [04-15|18:39:19] Generating DAG in progress               epoch=0 percentage=3 elapsed=6.628s
+INFO [04-15|18:39:21] Generating DAG in progress               epoch=0 percentage=4 elapsed=8.231s
+INFO [04-15|18:39:23] Generating DAG in progress               epoch=0 percentage=5 elapsed=9.894s
+INFO [04-15|18:39:24] Generating DAG in progress               epoch=0 percentage=6 elapsed=11.551s
+INFO [04-15|18:39:26] Generating DAG in progress               epoch=0 percentage=7 elapsed=13.150s
+INFO [04-15|18:39:28] Generating DAG in progress               epoch=0 percentage=8 elapsed=14.769s
+INFO [04-15|18:39:29] Generating DAG in progress               epoch=0 percentage=9 elapsed=16.390s
+INFO [04-15|18:39:31] Generating DAG in progress               epoch=0 percentage=10 elapsed=18.015s
+INFO [04-15|18:39:33] Generating DAG in progress               epoch=0 percentage=11 elapsed=19.678s
+INFO [04-15|18:39:34] Generating DAG in progress               epoch=0 percentage=12 elapsed=21.427s
+INFO [04-15|18:39:36] Generating DAG in progress               epoch=0 percentage=13 elapsed=23.431s
+INFO [04-15|18:39:38] Generating DAG in progress               epoch=0 percentage=14 elapsed=25.265s
+INFO [04-15|18:39:40] Generating DAG in progress               epoch=0 percentage=15 elapsed=27.070s
+INFO [04-15|18:39:42] Generating DAG in progress               epoch=0 percentage=16 elapsed=28.886s
+INFO [04-15|18:39:44] Generating DAG in progress               epoch=0 percentage=17 elapsed=31.255s
+INFO [04-15|18:39:46] Generating DAG in progress               epoch=0 percentage=18 elapsed=32.890s
+INFO [04-15|18:39:47] Generating DAG in progress               epoch=0 percentage=19 elapsed=34.619s
+INFO [04-15|18:39:49] Generating DAG in progress               epoch=0 percentage=20 elapsed=36.284s
+INFO [04-15|18:39:51] Generating DAG in progress               epoch=0 percentage=21 elapsed=37.964s
+INFO [04-15|18:39:52] Generating DAG in progress               epoch=0 percentage=22 elapsed=39.621s
+INFO [04-15|18:39:54] Generating DAG in progress               epoch=0 percentage=23 elapsed=41.304s
+INFO [04-15|18:39:56] Generating DAG in progress               epoch=0 percentage=24 elapsed=42.914s
+INFO [04-15|18:39:57] Generating DAG in progress               epoch=0 percentage=25 elapsed=44.511s
+INFO [04-15|18:39:59] Generating DAG in progress               epoch=0 percentage=26 elapsed=46.137s
+INFO [04-15|18:40:01] Generating DAG in progress               epoch=0 percentage=27 elapsed=47.866s
+INFO [04-15|18:40:02] Generating DAG in progress               epoch=0 percentage=28 elapsed=49.507s
+INFO [04-15|18:40:04] Generating DAG in progress               epoch=0 percentage=29 elapsed=51.154s
+INFO [04-15|18:40:05] IPC endpoint closed                      endpoint=/home/bob/Desktop/WorkSpace/PracticeBucket/ETHPrac/my-eth-chain/myDataDir/geth.ipc
+INFO [04-15|18:40:05] Blockchain manager stopped 
+INFO [04-15|18:40:05] Stopping Ethereum protocol 
+INFO [04-15|18:40:05] Ethereum protocol stopped 
+INFO [04-15|18:40:05] Transaction pool stopped 
+INFO [04-15|18:40:05] Database closed                          database=/home/bob/Desktop/WorkSpace/PracticeBucket/ETHPrac/my-eth-chain/myDataDir/geth/chaindata
+INFO [04-15|18:40:11] Maximum peer count                       ETH=25 LES=0 total=25
+INFO [04-15|18:40:11] Starting peer-to-peer node               instance=Geth/v1.8.2-stable-b8b9f7f4/linux-amd64/go1.9.4
+INFO [04-15|18:40:11] Allocated cache and file handles         database=/home/bob/Desktop/WorkSpace/PracticeBucket/ETHPrac/my-eth-chain/myDataDir/geth/chaindata cache=768 handles=512
+INFO [04-15|18:40:11] Initialised chain configuration          config="{ChainID: 1994 Homestead: 0 DAO: <nil> DAOSupport: false EIP150: <nil> EIP155: 0 EIP158: 0 Byzantium: 0 Constantinople: <nil> Engine: unknown}"
+INFO [04-15|18:40:11] Disk storage enabled for ethash caches   dir=/home/bob/Desktop/WorkSpace/PracticeBucket/ETHPrac/my-eth-chain/myDataDir/geth/ethash count=3
+INFO [04-15|18:40:11] Disk storage enabled for ethash DAGs     dir=/home/bob/.ethash                                                                     count=2
+INFO [04-15|18:40:11] Initialising Ethereum protocol           versions="[63 62]" network=1114
+INFO [04-15|18:40:11] Loaded most recent local header          number=0 hash=9d236a…641806 td=400
+INFO [04-15|18:40:11] Loaded most recent local full block      number=0 hash=9d236a…641806 td=400
+INFO [04-15|18:40:11] Loaded most recent local fast block      number=0 hash=9d236a…641806 td=400
+INFO [04-15|18:40:11] Loaded local transaction journal         transactions=0 dropped=0
+INFO [04-15|18:40:11] Regenerated local transaction journal    transactions=0 accounts=0
+INFO [04-15|18:40:11] Starting P2P networking 
+INFO [04-15|18:40:14] UDP listener up                          self=enode://61ea7177010758a3048dd06b3bb53d83d43e296fd10c3a76ae88175c5286bde382107cc00fd285224fbccb09e6e7bbc504ed54b5f8b0824ecf1c07bf0d51939e@[::]:30303
+INFO [04-15|18:40:14] RLPx listener up                         self=enode://61ea7177010758a3048dd06b3bb53d83d43e296fd10c3a76ae88175c5286bde382107cc00fd285224fbccb09e6e7bbc504ed54b5f8b0824ecf1c07bf0d51939e@[::]:30303
+INFO [04-15|18:40:14] IPC endpoint opened                      url=/home/bob/Desktop/WorkSpace/PracticeBucket/ETHPrac/my-eth-chain/myDataDir/geth.ipc
+INFO [04-15|18:40:14] Etherbase automatically configured       address=0x4336bE3a5F412778b80C4664A99B90B23c52A64E
+INFO [04-15|18:40:30] IPC endpoint closed                      endpoint=/home/bob/Desktop/WorkSpace/PracticeBucket/ETHPrac/my-eth-chain/myDataDir/geth.ipc
+INFO [04-15|18:40:30] Blockchain manager stopped 
+INFO [04-15|18:40:30] Stopping Ethereum protocol 
+INFO [04-15|18:40:30] Ethereum protocol stopped 
+INFO [04-15|18:40:30] Transaction pool stopped 
+INFO [04-15|18:40:30] Database closed                          database=/home/bob/Desktop/WorkSpace/PracticeBucket/ETHPrac/my-eth-chain/myDataDir/geth/chaindata
+INFO [04-15|18:50:49] Maximum peer count                       ETH=25 LES=0 total=25
+Fatal: Error starting protocol stack: open /home/bob/Desktop/WorkSpace/PracticeBucket/ETHPrac/my-eth-chain/myDataDir/geth/LOCK: permission denied
+INFO [04-15|18:50:57] Maximum peer count                       ETH=25 LES=0 total=25
+INFO [04-15|18:50:57] Starting peer-to-peer node               instance=Geth/v1.8.2-stable-b8b9f7f4/linux-amd64/go1.9.4
+INFO [04-15|18:50:57] Allocated cache and file handles         database=/home/bob/Desktop/WorkSpace/PracticeBucket/ETHPrac/my-eth-chain/myDataDir/geth/chaindata cache=768 handles=512
+INFO [04-15|18:50:57] Initialised chain configuration          config="{ChainID: 1994 Homestead: 0 DAO: <nil> DAOSupport: false EIP150: <nil> EIP155: 0 EIP158: 0 Byzantium: 0 Constantinople: <nil> Engine: unknown}"
+INFO [04-15|18:50:57] Disk storage enabled for ethash caches   dir=/home/bob/Desktop/WorkSpace/PracticeBucket/ETHPrac/my-eth-chain/myDataDir/geth/ethash count=3
+INFO [04-15|18:50:57] Disk storage enabled for ethash DAGs     dir=/home/bob/.ethash                                                                     count=2
+INFO [04-15|18:50:57] Initialising Ethereum protocol           versions="[63 62]" network=1114
+INFO [04-15|18:50:57] Loaded most recent local header          number=0 hash=9d236a…641806 td=400
+INFO [04-15|18:50:57] Loaded most recent local full block      number=0 hash=9d236a…641806 td=400
+INFO [04-15|18:50:57] Loaded most recent local fast block      number=0 hash=9d236a…641806 td=400
+INFO [04-15|18:50:57] Loaded local transaction journal         transactions=0 dropped=0
+INFO [04-15|18:50:57] Regenerated local transaction journal    transactions=0 accounts=0
+INFO [04-15|18:50:57] Starting P2P networking 
+INFO [04-15|18:50:59] UDP listener up                          self=enode://61ea7177010758a3048dd06b3bb53d83d43e296fd10c3a76ae88175c5286bde382107cc00fd285224fbccb09e6e7bbc504ed54b5f8b0824ecf1c07bf0d51939e@[::]:30303
+INFO [04-15|18:50:59] RLPx listener up                         self=enode://61ea7177010758a3048dd06b3bb53d83d43e296fd10c3a76ae88175c5286bde382107cc00fd285224fbccb09e6e7bbc504ed54b5f8b0824ecf1c07bf0d51939e@[::]:30303
+INFO [04-15|18:50:59] IPC endpoint opened                      url=/home/bob/Desktop/WorkSpace/PracticeBucket/ETHPrac/my-eth-chain/myDataDir/geth.ipc
+INFO [04-15|18:50:59] Etherbase automatically configured       address=0x4336bE3a5F412778b80C4664A99B90B23c52A64E
+INFO [04-15|19:50:57] Regenerated local transaction journal    transactions=0 accounts=0
+INFO [04-15|19:58:33] IPC endpoint closed                      endpoint=/home/bob/Desktop/WorkSpace/PracticeBucket/ETHPrac/my-eth-chain/myDataDir/geth.ipc
+INFO [04-15|19:58:33] Blockchain manager stopped 
+INFO [04-15|19:58:33] Stopping Ethereum protocol 
+INFO [04-15|19:58:33] Ethereum protocol stopped 
+INFO [04-15|19:58:33] Transaction pool stopped 
+INFO [04-15|19:58:33] Database closed                          database=/home/bob/Desktop/WorkSpace/PracticeBucket/ETHPrac/my-eth-chain/myDataDir/geth/chaindata
