@@ -3,9 +3,13 @@ package com.example.bob.myapplication;
 import android.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.InputType;
 import android.view.ViewGroup;
+import android.view.inputmethod.EditorInfo;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.ListAdapter;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -26,35 +30,26 @@ public class MainActivity extends AppCompatActivity {
          */
         ArrayList<EditText> listOfInputs = new ArrayList<EditText>();
         EditText inputOne = new EditText(this);
-        setHW(inputOne);
+        //inputOne.setHint("No dude.");
+        //inputOne.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT));
         listOfInputs.add(inputOne);
-        /*
-        EditText inputTwo = new EditText(this);
-        setHW(inputTwo);
-        listOfInputs.add(inputTwo);
-        EditText inputThree = new EditText(this);
-        setHW(inputThree);
-        listOfInputs.add(inputThree);
-        EditText inputFour = new EditText(this);
-        setHW(inputFour);
-        listOfInputs.add(inputFour);
-        EditText inputFive = new EditText(this);
-        setHW(inputFive);
-        listOfInputs.add(inputFive);
-        */
 
-        //Not entirely sure if the simple_list_item_1
         ArrayAdapter<EditText> itemsAdapter = new ArrayAdapter<EditText>(this
-                , android.R.layout.simple_list_item_1, listOfInputs);
+                    , android.R.layout.simple_list_item_1, listOfInputs);
         ListView listView = (ListView) findViewById(R.id.listViews);
         listView.setAdapter(itemsAdapter);
-
     }
 
     //https://stackoverflow.com/questions/36340268/nullpointerexception-while-setting-layoutparams
     //The link above saved me.
+    /*
     protected void setHW(EditText edText){
         ViewGroup.LayoutParams params = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         edText.setLayoutParams(params);
+        edText.setInputType(InputType.TYPE_TEXT_FLAG_MULTI_LINE);
+        //The below lines are from: https://stackoverflow.com/questions/15032870/create-a-multiline-edittext-programmatically
+        edText.setSingleLine(false);
+        edText.setImeOptions(EditorInfo.IME_FLAG_NO_ENTER_ACTION);
     }
+    */
 }
