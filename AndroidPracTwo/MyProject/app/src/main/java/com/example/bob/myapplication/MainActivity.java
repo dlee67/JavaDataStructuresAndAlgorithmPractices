@@ -21,28 +21,28 @@ import java.util.ArrayList;
 import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
 
 public class MainActivity extends AppCompatActivity {
+/*
+   The need to have the class below sprouts from the fact that ArrayAdapter by themselves
+   cannot accept other layouts which aren't composed of TextView objects only; therefore,
+   there is a need to override the getView method.
 
+*/
     public static class EditTextAdapter extends ArrayAdapter<EditText>{
-
-        //Not entirely
         public EditTextAdapter(Context context, /* int resource = 0 ,*/ ArrayList<EditText> edTxtList){
             super(context, 0, edTxtList);
         }
-
         public View getView(int position, View convertView, ViewGroup parent){
-
             View listItemView = convertView;
             if(listItemView == null){
                 //What's LayoutInflater?
                 //https://stackoverflow.com/questions/17101903/what-does-layoutinflater-class-do-in-android
+                //Since, I am inflating the Layouts, there is no need to pass in a layout into a super constructor.
                 listItemView = LayoutInflater.from(getContext()).inflate(
                                 R.layout.edit_text, parent, false);
             }
-
             //Can call getItem off the bet because I am extending ArrayAdapter.
             //Anyways, EditText in the list_item located at the "position" argument.
             EditText currentEdTxt = getItem(position);
-
             return listItemView;
         }
     }
@@ -51,17 +51,21 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         /*
             The implementation done from Udacity's innitializes the XML objects
             in the Java source; meaning, I gotta figure out how to do just that,
             with the EditText.
          */
         ArrayList<EditText> listOfInputs = new ArrayList<EditText>();
-        EditText inputOne = new EditText(this);
+        //EditText inputOne = new EditText(this);
         //inputOne.setHint("No dude.");
         //inputOne.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT));
-        listOfInputs.add(inputOne);
+        listOfInputs.add(new EditText(this));
+        listOfInputs.add(new EditText(this));
+        listOfInputs.add(new EditText(this));
+        listOfInputs.add(new EditText(this));
+        listOfInputs.add(new EditText(this));
+        listOfInputs.add(new EditText(this));
 
         EditTextAdapter itemsAdapter = new EditTextAdapter(this, listOfInputs);
         ListView listView = (ListView) findViewById(R.id.listViews);
@@ -70,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
 
     //https://stackoverflow.com/questions/36340268/nullpointerexception-while-setting-layoutparams
     //The link above saved me.
-
+    /*
     protected void setHW(EditText edText){
         ViewGroup.LayoutParams params = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         edText.setLayoutParams(params);
@@ -79,4 +83,5 @@ public class MainActivity extends AppCompatActivity {
         edText.setSingleLine(false);
         edText.setImeOptions(EditorInfo.IME_FLAG_NO_ENTER_ACTION);
     }
+    */
 }
