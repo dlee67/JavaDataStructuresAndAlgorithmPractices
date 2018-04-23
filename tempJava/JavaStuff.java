@@ -4,40 +4,34 @@ import java.io.*;
 
 class JavaStuff{
 	public static void main(String args[]) throws IOException{
-		//ArrayList<Integer> listOfNum = new ArrayList<Integer>();
-      Scanner scnr = new Scanner(new File("SomeFile.txt"));
 
-      //for(int count = 10; scnr.hasNext(); count++){
-      //   listOfNum.add(Double.parseDouble(scnr.next()));
-      //}
-
-      int x = 0;
-      int y = 0;
-      int z = 0;
-      for(int count = 0; scnr.hasNext(); count++){
-         x += Double.parseDouble(scnr.next());
-         y += Double.parseDouble(scnr.next());
-         z += Double.parseDouble(scnr.next());
-      }
-      System.out.println("my vals: " + x);
-      System.out.println("my vals: " + y);
-      System.out.println("my vals: " + z);
       /*
-      //Comput average.
-      int avg = 0;
-      for(int count = 0; count < (listOfNum.size() - 1); count++){
-         avg += listOfNum.get(count); //eq to avg = listOfNum.get(count) + avg
-      }
-      System.out.println("The avg values: " + avg/(listOfNum.size()));
+      ArrayList<Integer> firstArray = new ArrayList<Integer>();
 
-      //Find max.
-      int maxVal = 0;
-      for(int count = 0; count < (listOfNum.size() - 1); count++){
-         if(maxVal < listOfNum.get(count)){
-            maxVal = listOfNum.get(count);
-         }
+      firstArray.add(1);firstArray.add(2);firstArray.add(3);firstArray.add(4);
+
+      ArrayList<Integer> secondArray = new ArrayList<Integer>();
+
+      for(int count = 0; count < (firstArray.size() - 1); count++){
+         secondArray.add(firstArray.get(count));
       }
-      System.out.println("My maxVal is: " + maxVal);
       */
+      //String[] firstArray = {"box", "chiar"};
+      /*
+      int[] secondArray = new int[4];
+      for(int count = 0; count < (firstArray.length - 1); count++){
+         secondArray[count] = firstArray[count];
+      }
+      */
+      /*
+      PrintWriter pw = new PrintWriter("NewFile.txt");
+      for(int count = 0; count < (firstArray.length); count++){
+         pw.write(firstArray[count]);
+         pw.write(" ");
+      }
+      */
+      //You have to close the io streams, or nothing gets written.
+      //pw.close();
+
    }
 }
