@@ -20,7 +20,8 @@ public class MainActivity extends AppCompatActivity {
         fT = fragmentManager.beginTransaction();
         // Not populating the views; perhaps, it's because I am not
         // specifying the Fragment container.
-        fT.add(R.id.stuffOne, newFragment, "clone" + cloneCount);
+        fT.add(R.id.stuffOne, newFragment, "clone" + cloneCount)
+          .addToBackStack(null);
         cloneCount++;
         fT.commit();
     }
