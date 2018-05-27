@@ -19,15 +19,12 @@ import static android.support.test.espresso.matcher.ViewMatchers.withText;
 @RunWith(AndroidJUnit4.class)
 public class SomethingTest {
 
-    /*
-        Instrumentatino test
-     */
     @Rule
     public ActivityTestRule<MainActivity> mActivityRule =
             new ActivityTestRule(MainActivity.class);
 
     @Test
     public void checkTextEquality(){
-        onView(withText("Hello world!")).check(matches(isDisplayed()));
+        onView(withText("Hello World!")).check(matches(isDisplayed()));
     }
 }
