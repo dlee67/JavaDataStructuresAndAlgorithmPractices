@@ -11,6 +11,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import static android.support.test.espresso.Espresso.onView;
+import static android.support.test.espresso.action.ViewActions.click;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
@@ -25,6 +26,9 @@ public class SomethingTest {
 
     @Test
     public void checkTextEquality(){
-        onView(withText("Hello World!")).check(matches(isDisplayed()));
+        //onView(withText("Hello World!")).check(matches(isDisplayed()));
+        onView(withId(R.id.ThatButton))
+                .perform(click())
+                .check(matches(isDisplayed()));
     }
 }
