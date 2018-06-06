@@ -25,10 +25,10 @@ public class SomethingTest {
             new ActivityTestRule(MainActivity.class);
 
     @Test
-    public void checkTextEquality(){
-        //onView(withText("Hello World!")).check(matches(isDisplayed()));
-        onView(withId(R.id.ThatButton))
-                .perform(click())
-                .check(matches(isDisplayed()));
+    public void checkTextEquality() {
+        onView(withId(R.id.ThatButton)) //Really, performs a click on a button.
+                .perform(click());
+        onView(withId(R.id.ThatView)) //Then, sees if there is a text displayed.
+                .check(matches(withText("Awake Road Again")));
     }
 }
