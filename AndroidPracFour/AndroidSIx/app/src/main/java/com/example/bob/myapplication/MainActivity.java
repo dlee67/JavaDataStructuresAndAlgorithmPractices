@@ -6,6 +6,9 @@ import android.support.v7.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
 
+    //Referred:
+    //https://developer.android.com/training/appbar/setting-up#java
+    //https://developer.android.com/training/appbar/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
