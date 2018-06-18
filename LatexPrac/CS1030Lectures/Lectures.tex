@@ -1,0 +1,25 @@
+\documentclass{article}
+\usepackage{tcolorbox}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\begin{document}
+\date{June 18, 2018}
+\section{Data Movement Between Memory}
+When a program is running inside a program, only portion of that program is being ran inside the main memory.
+
+Temporal Locality Items accessed recently are likely to be accessed again soon.
+
+Spatial locality is when the items near those accessed recentlyare likely to be accessed soon.
+
+Caches generally hold the addresses frequently accessed, so, they could be pulled again.
+
+\section{Cache Memory}
+Cache memories are divided into blocks.
+
+\subsection{}
+Where each of those blocks are segregated via keys, where those keys maps to the addresses in the Main Memory.
+\begin{equation}
+Cache Block Number = Remainder\frac{Main Memory Block Number}{Number of blocks in cache}
+\end{equation}
+
+\end{document}
