@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2018.6.16)  16 JUN 2018 15:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2018.6.16)  16 JUN 2018 17:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -38,6 +38,14 @@ LaTeX Font Info:    ... okay on input line 2.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 2.
 LaTeX Font Info:    ... okay on input line 2.
 
+! Undefined control sequence.
+l.7 \mbox [20\width
+                   ] [20\height] {It doesn't show}
+? 
+! Undefined control sequence.
+l.7 \mbox [20\width] [20\height
+                               ] {It doesn't show}
+? 
 [1
 
 ] (./stuff.aux) ) 
@@ -48,6 +56,6 @@ Here is how much of TeX's memory you used:
  3827 multiletter control sequences out of 15000+600000
  4539 words of font info for 17 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 23i,4n,18p,156b,109s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 23i,4n,18p,137b,109s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on stuff.dvi (1 page, 404 bytes).
+Output written on stuff.dvi (1 page, 444 bytes).

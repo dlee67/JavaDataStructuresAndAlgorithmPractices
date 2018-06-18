@@ -9,17 +9,21 @@ import tensorflow as tf
 x = tf.Variable(3, name ="x")
 y = tf.Variable(4, name="y")
 f = x*x*y + y + 2
-sess = tf.Session()
-sess.run(x.initializer)
-sess.run(y.initializer)
-result = sess.run(f)
-print(result)
-sess.close()
+#sess = tf.Session()
+#sess.run(x.initializer)
+#sess.run(y.initializer)
+#result = sess.run(f)
+#print(result)
+#sess.close()
 
 '''
 The above operation can be cumbersum (having to call run() all the time).
+So, the tf object holds all the Operation objects (for example,
+the tf.Variables must be passed to run function, and tf objects
+only evalutes whatever state it has. 
 '''
 with tf.Session() as sess:
     x.initializer.run()
     y.initializer.run()
     result = f.eval()
+print(result)
