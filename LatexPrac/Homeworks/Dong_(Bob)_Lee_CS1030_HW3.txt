@@ -1,0 +1,100 @@
+Dong (Bob) Lee
+CS 1030
+HW 3
+
+1.) a.) 1011_2 = 2^3_10 + 2^1_10 + 2^0_10 = 8 + 0 + 2 + 1 = 11_10
+    b.) 1010101_2 = 2^6_10 + 2^4_10 + 2^2_10 + 2^0_10
+                  = 64 + 16 + 4 + 1
+                  = 85
+    c.) 10101010_2 = 2^7_10 + 2^5_10 + 2^3_10 + 2^2_10 + 2^1_10
+                   = 128 + 32 + 8 + 2 = 170
+    d.) 11.01_2 = 2^1_10 + 2^0 + 2^(-2) = 3.25
+    e.) 1010.101_2 = 2^4_10 + 2^1_10 + 2^(-1)_10 + 2^(-3)_10
+                   = 10.5625
+
+2.)
+   T = 54_16
+   h = 68_16
+   e = 65_16
+space = 20__16
+   q = 71_16
+   u = 75_16
+   i = 69_16
+   c = 63_16
+   k = 6B_16
+space = 20_16
+   b = 62_16
+   r = 72_16
+   o = 6F_16
+   w = 77_16
+   n = 6E_16
+space = 20_16
+   f = 66_16
+   o = 6E_16
+   x = 78_16
+space = 20_16
+   j = 6A_16
+   u = 75_16
+   m = 6D_16
+   p = 70_16
+   s = 73_16
+space = 20_16
+   o = 6F_16
+   v = 76_16
+   e = 65_16
+   r = 72_16
+space = 20_16
+   t = 74_16
+   h = 68_16
+   e = 65_16
+space = 20_16
+   l = 6C_16
+   a = 61_16
+   z = 7A_16
+   y = 79_16
+space = 20_16
+   d = 64_16
+   o = 6F__16
+   g = 67_16
+   . = 2E_16
+
+3.)
+a.) 2^16 allows 65,536 combinations; therefore, 65,536 characters can come
+out of 16 bits.
+b.) For each placements of the 16 bits encoding, 16 bits will be the cost for them;
+on the other side of things, let's say we have 32 bits encoding
+for each characters. Certainly, we could have more variations of characters
+we can use, but the data could be "bloated," if majority of the characters
+are from the ASCII table.
+
+4.)
+a.) Unicode-4, with maximum length of 32-characters because
+business these days tend to be international, we probably
+want to compensate the the fact that not everyone's
+characters are going to have characters from ASCII table.
+b.) I would specify the telephone number in UTF-8 because I will
+still need parenthesis, dashes, and numbers.
+
+5.)
+a.) 2^16 is a equivalent representation to 16-bit address limit,
+because 65,536 (which is 2^16) is the
+highest address a 16-bit machine can reach.
+
+b.) 2^32 * 1 byte = 4,294,967,296 byte
+
+c.) The 2^32 bit machine will use paging, where
+certain sections inside my terabyte disk will be represented
+as smaller amount of bits than what it actually is.
+
+d.) Yes, the largest possible address could be reached w/
+64-bit machine is 1.8446744e+19
+
+e.) Because of the introduction of multicore processors,
+increasing the amount of bits for an architecture became
+meaningless (in my opinion).
+"If you were plowing a field, which would you
+rather use? Two strong oxen or 1024 chickens?"
+- Seymore Cray
+These days I feel like we can pay for
+16 average oxens, and disregard 8 super
+strong oxens.
