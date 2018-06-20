@@ -1,0 +1,7 @@
+1.) a.) This approach cannot because the data of gif files are formatted differently than the
+	 	  jpg files.
+	 b.) Depends. Does the application has a "fail safe" functionality to save files as any 
+		  extension desires?
+2.) Lossless is when a file is compressed without any loss of data, after decrypting so that
+	 original state of the file is given. Where lossy is when a data is compress with the loss of data,
+	 when it is decrypted to return the file into the original.
