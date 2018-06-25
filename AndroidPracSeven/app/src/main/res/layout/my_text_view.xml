@@ -1,0 +1,6 @@
+<TextView
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:textSize="100dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"/>
+<!-- After I inserted the xmlns:android="http://schemas.android.com/apk/res/android" to my TextView, the recycle appeared without a problem. -->
